@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+menu {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: unset;
+  color: black;
+}
+
+svg {
+  &:focus {
+    outline: none;
+  }
+}
