@@ -20,8 +20,9 @@ interface timelineComponent {
 export const timeline: Array<timelineComponent> = [
   {
     date: 'Sep 2024 - Aug 2025',
-    title: 'LSE',
-    text: 'MSc in Development Management (Specialisation in Applied Development Economics)',
+    title:
+      'LSE, MSc in Development Management (Specialisation in Applied Development Economics)',
+    text: 'As part of my masters I am participating in a consultancy project, which  provides me with an opportunity to apply the analytical tools and critical thinking skills that I learn  to a ‘real world’ issue. I am also taking courses on: Applied Policy Analysis for Macroeconomic Development, Applied Econometrics and Development Management.',
     imageUrl: LSE,
     location: 'London, United Kingdom',
   },
@@ -38,15 +39,17 @@ export const timeline: Array<timelineComponent> = [
   },
   {
     date: 'Sep 2023 - May 2024',
-    title: 'Sciences Po',
-    text: 'MA in International Economic Policy (Concentration in Diplomacy)',
+    title:
+      'Sciences Po, MA in International Economic Policy (Concentration in Diplomacy)',
+    text: 'Courses on Applied Econometrics with STATA, Political Economy of Development and Growth, International Trade, Macroeconomics and Communications.',
     imageUrl: SCPO,
     location: 'Paris, France',
   },
   {
-    date: 'May 2023',
-    title: 'Universidad Carlos III de Madrid',
-    text: 'Dual Bachelor in International Studies and Political Sciences.',
+    date: 'Sep 2018 - May 2023',
+    title:
+      'Universidad Carlos III de Madrid, Dual Bachelor in International Studies and Political Sciences',
+    text: 'Courses on Statistics, STATA or Macroeconomics, Microeconomics and International Finance.',
     imageUrl: UC3M,
     location: 'Madrid, Spain',
   },
@@ -66,7 +69,7 @@ export const timeline: Array<timelineComponent> = [
   {
     date: 'Dec 2022 - May 2023',
     title: 'University of New South Wales',
-    text: 'Took Sociology and Inclusive Development courses in order to amplify my skillset during the degree.',
+    text: 'Undergraduate exchange. I took courses on Sociology and Inclusive Development to amplify my skillset during my degree. I was also able to explore Australia while working as a Research Assistant at the university.',
     imageUrl: SYD2,
     location: 'Sydney, Australia',
   },

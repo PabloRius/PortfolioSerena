@@ -62,10 +62,19 @@ export function TimelineSection() {
                 <div className="Date">{data.date}</div>
                 <div className="Text">
                   <div className="Title">
-                    <p>{data.title}</p>
+                    <strong>
+                      <p>{data.title}</p>
+                    </strong>
                   </div>
+                  {data.location && (
+                    <div className="Location">
+                      <i>{data.location}</i>
+                    </div>
+                  )}
                   <div className="Description">
-                    {Array.isArray(data.text) ? (
+                    {Array.isArray(data.text) &&
+                    data.title !==
+                      'Research Assistant, University of New South Wales' ? (
                       <ul>
                         {data.text.map((line, index) => (
                           <li key={index}>
@@ -73,15 +82,29 @@ export function TimelineSection() {
                           </li>
                         ))}
                       </ul>
+                    ) : Array.isArray(data.text) &&
+                      data.title ===
+                        'Research Assistant, University of New South Wales' ? (
+                      <>
+                        <p>{data.text[0]}</p>
+                        <ul>
+                          {data.text.slice(1, -1).map((line, index) => (
+                            <li key={index}>
+                              <p>{line}</p>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
                     ) : (
                       <p>{data.text}</p>
                     )}
                   </div>
                 </div>
-                <div className="Image">
-                  <img src={data.imageUrl} alt={data.title} />
-                  {/* <p>{data.location}</p> */}
-                </div>
+                {data.imageUrl && (
+                  <div className="Image">
+                    <img src={data.imageUrl} alt={data.title} />
+                  </div>
+                )}
               </div>
             </div>
           );

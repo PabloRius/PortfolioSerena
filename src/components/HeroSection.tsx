@@ -15,7 +15,7 @@ export function HeroSection() {
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText('serena.indij.da.costa@gmail.com')
+      .writeText('s.indij-da-costa@lse.ac.uk')
       .then(() => {
         setCopyTooltip('Copied to Clipboard!');
       })
@@ -42,8 +42,8 @@ export function HeroSection() {
   return (
     <section className="HeroSection">
       <div className="MailLink">
-        <a href="mailto:serena.indij.da.costa@gmail.com">
-          Serena.indij.da.costa@gmail.com
+        <a href="mailto:s.indij-da-costa@lse.ac.uk">
+          s.indij-da-costa@lse.ac.uk
         </a>
         <IoCopy
           size={20}
@@ -59,12 +59,12 @@ export function HeroSection() {
       </div>
       <div className="Presentation">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur
+          Hi! I’m Serena, a curious half Brazilian half Argentinian master's
+          student who has lived all over the world —9 countries so far! I’m
+          passionate about hiking and cooking, and I’m currently completing my
+          Dual Master’s degree at Sciences Po in Paris and LSE in London. If
+          you’d like to know more about me, feel free to scroll down and don’t
+          forget to download my CV!
         </p>
         <div className="Image">
           <img src={Profile} alt="Serena Indij da Costa in Paris" />
