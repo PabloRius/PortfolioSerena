@@ -68,6 +68,7 @@ export function TimelineSection() {
                   </div>
                   {data.location && (
                     <div className="Location">
+                      <data.flag title={data.location} />
                       <i>{data.location}</i>
                     </div>
                   )}

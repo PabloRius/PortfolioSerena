@@ -9,12 +9,25 @@ import UVIC from '../assets/images/UVIC.jpg';
 import COP from '../assets/images/COP.jpg';
 import UC3M from '../assets/images/UC3M.jpg';
 
+import {
+  CA,
+  ES,
+  AU,
+  DK,
+  NL,
+  FR,
+  GB,
+  AR,
+  FlagComponent,
+} from 'country-flag-icons/react/3x2';
+
 interface timelineComponent {
   date: string;
   title: string;
   text: string | Array<string>;
   location: string;
   imageUrl?: string;
+  flag: FlagComponent;
 }
 
 export const timeline: Array<timelineComponent> = [
@@ -25,6 +38,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'As part of my masters I am participating in a consultancy project, which  provides me with an opportunity to apply the analytical tools and critical thinking skills that I learn  to a ‘real world’ issue. I am also taking courses on: Applied Policy Analysis for Macroeconomic Development, Applied Econometrics and Development Management.',
     imageUrl: LSE,
     location: 'London, United Kingdom',
+    flag: GB,
   },
   {
     date: 'May 2024 - Sep 2024',
@@ -36,6 +50,7 @@ export const timeline: Array<timelineComponent> = [
     ],
     imageUrl: OECD,
     location: 'Amsterdam, Netherlands',
+    flag: NL,
   },
   {
     date: 'Sep 2023 - May 2024',
@@ -44,6 +59,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Courses on Applied Econometrics with STATA, Political Economy of Development and Growth, International Trade, Macroeconomics and Communications.',
     imageUrl: SCPO,
     location: 'Paris, France',
+    flag: FR,
   },
   {
     date: 'Sep 2018 - May 2023',
@@ -52,6 +68,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Courses on Statistics, STATA or Macroeconomics, Microeconomics and International Finance.',
     imageUrl: UC3M,
     location: 'Madrid, Spain',
+    flag: ES,
   },
   {
     date: 'Jan 2023 - May 2023',
@@ -65,6 +82,7 @@ export const timeline: Array<timelineComponent> = [
     ],
     imageUrl: SYD1,
     location: 'Sydney, Australia',
+    flag: AU,
   },
   {
     date: 'Dec 2022 - May 2023',
@@ -72,6 +90,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Undergraduate exchange. I took courses on Sociology and Inclusive Development to amplify my skillset during my degree. I was also able to explore Australia while working as a Research Assistant at the university.',
     imageUrl: SYD2,
     location: 'Sydney, Australia',
+    flag: AU,
   },
   {
     date: 'Oct 2022 - Dec 2022',
@@ -84,6 +103,7 @@ export const timeline: Array<timelineComponent> = [
     ],
     imageUrl: COLPOLSOC,
     location: 'Madrid, Spain',
+    flag: ES,
   },
   {
     date: 'Sep 2022 - Dec 2022',
@@ -91,6 +111,7 @@ export const timeline: Array<timelineComponent> = [
       'International Cooperation Project Intern, Association for the Support of the Syrian People',
     text: 'Collaborated in the design of international development projects, organising fundraising events and running the economic logistics behind the NGO.',
     location: 'Madrid, Spain',
+    flag: ES,
   },
   {
     date: 'May 2022 - Jul 2022',
@@ -98,6 +119,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Worked on a project dedicated to the adoption of the IHRA Working Definition of Anti-Semitism by different public and private organisations in Latin America.',
     imageUrl: BAIR,
     location: 'Buenos Aires, Argentina',
+    flag: AR,
   },
   {
     date: 'Jan 2022 - May 2022',
@@ -105,6 +127,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Undergraduate exchange. Took Political Sciences courses focused on Ethics in International Relations, the inner workings of the European Union, Latin American Politics and Society, International Politics of Trade and experimental.',
     imageUrl: UVIC,
     location: 'Vancouver Island, Canada',
+    flag: CA,
   },
   {
     date: 'Jan 2021 - Jun 2021',
@@ -112,5 +135,6 @@ export const timeline: Array<timelineComponent> = [
     text: 'Undergraduate exchange. Focused on courses aimed at understanding how Society and Technology shape International interactions, the importance of Intercultural Communication and Negotiation, and analysing Leadership and Management techniques.',
     imageUrl: COP,
     location: 'Copenhagen, Denmark',
+    flag: DK,
   },
 ];

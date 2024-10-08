@@ -239,8 +239,14 @@
               color: black;
             }
             .Location {
+              display: flex;
+              flex-direction: row;
+              max-height: 14px;
               font-size: 14px;
               margin-top: 8px;
+              > svg {
+                width: 30px;
+              }
             }
             .Description {
               color: rgb(42, 42, 42);
