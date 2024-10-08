@@ -27,6 +27,15 @@ export function HeroSection() {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Serena_Indij_da_Costa_resume.pdf';
+    link.download = 'Serena_Indij_da_Costa_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="HeroSection">
       <div className="MailLink">
@@ -65,7 +74,7 @@ export function HeroSection() {
         />
       </div>
 
-      <button type="button" className="CV">
+      <button type="button" className="CV" onClick={downloadCV}>
         Download my CV
       </button>
       <button
