@@ -1,35 +1,12 @@
-import { useRef, useState } from 'react';
 import { SocialIcon } from './SocialIcon';
-
-import { IoCopy } from 'react-icons/io5';
 
 import { IoLogoInstagram } from 'react-icons/io5';
 import { IoLogoLinkedin } from 'react-icons/io5';
-import { Tooltip } from 'react-tooltip';
+import { IoMail } from 'react-icons/io5';
 
 import Profile from '../assets/images/Profile.png';
 
 export function HeroSection() {
-  const [copyTooltip, setCopyTooltip] = useState('Copy to Clipboard');
-  const nextSectionRef = useRef<HTMLDivElement | null>(null);
-
-  const handleCopy = () => {
-    navigator.clipboard
-      .writeText('s.indij-da-costa@lse.ac.uk')
-      .then(() => {
-        setCopyTooltip('Copied to Clipboard!');
-      })
-      .catch((err) => {
-        console.error(err);
-        setCopyTooltip("Couldn't copy to clipboard!");
-      });
-  };
-  const handleResetCopyTooltip = async () => {
-    setTimeout(() => {
-      setCopyTooltip('Copy to Clipboard');
-    }, 250);
-  };
-
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = '/Serena_Indij_da_Costa_resume.pdf';
@@ -41,22 +18,6 @@ export function HeroSection() {
 
   return (
     <section className="HeroSection">
-      <div className="MailLink">
-        <a href="mailto:s.indij-da-costa@lse.ac.uk">
-          s.indij-da-costa@lse.ac.uk
-        </a>
-        <IoCopy
-          size={20}
-          color="black"
-          cursor="pointer"
-          data-tooltip-id="copy-tooltip"
-          data-tooltip-content={copyTooltip}
-          data-tooltip-place="top"
-          data-tooltip-variant="light"
-          onClick={handleCopy}
-          onMouseLeave={handleResetCopyTooltip}
-        />
-      </div>
       <div className="Presentation">
         <p>
           Hi! I’m Serena, a curious half Brazilian half Argentinian master's
@@ -70,25 +31,29 @@ export function HeroSection() {
           <img src={Profile} alt="Serena Indij da Costa in Paris" />
         </div>
       </div>
-      <div className="SocialIcons">
-        <SocialIcon
-          Icon={IoLogoInstagram}
-          redirect="https://www.instagram.com/sere_viaja/?hl=en"
-          color="#dd2985"
-        />
-        <SocialIcon
-          Icon={IoLogoLinkedin}
-          redirect="https://www.linkedin.com/in/serena-indij-da-costa/"
-          color="#0c65c3"
-        />
+      <div className="LastSection">
+        <div className="SocialIcons">
+          <SocialIcon
+            Icon={IoMail}
+            redirect="mailto::s.indij-da-costa@lse.ac.uk"
+            color="#367da2"
+          />
+          <SocialIcon
+            Icon={IoLogoInstagram}
+            redirect="https://www.instagram.com/sere_viaja/?hl=en"
+            color="#dd2985"
+          />
+          <SocialIcon
+            Icon={IoLogoLinkedin}
+            redirect="https://www.linkedin.com/in/serena-indij-da-costa/"
+            color="#0c65c3"
+          />
+        </div>
+
+        <button type="button" className="CV" onClick={downloadCV}>
+          Download my CV
+        </button>
       </div>
-
-      <button type="button" className="CV" onClick={downloadCV}>
-        Download my CV
-      </button>
-
-      <Tooltip id="copy-tooltip" border={'solid 1px grey'} />
-      <div className="ref" ref={nextSectionRef} />
     </section>
   );
 }

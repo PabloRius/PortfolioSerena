@@ -35,7 +35,7 @@ export const timeline: Array<timelineComponent> = [
       ' OECD Watch Social Media and Communications',
     ],
     imageUrl: OECD,
-    location: 'Ámsterdam, Netherlands',
+    location: 'Amsterdam, Netherlands',
   },
   {
     date: 'Sep 2023 - May 2024',
