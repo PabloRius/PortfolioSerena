@@ -53,8 +53,16 @@ export function HeroSection() {
         velit esse cillum dolore eu fugiat nulla pariatur
       </p>
       <div className="SocialIcons">
-        <SocialIcon Icon={IoLogoInstagram} redirect="instagram.com" />
-        <SocialIcon Icon={IoLogoLinkedin} redirect="linkedin.com" />
+        <SocialIcon
+          Icon={IoLogoInstagram}
+          redirect="https://www.instagram.com/sere_viaja/?hl=en"
+          color="#dd2985"
+        />
+        <SocialIcon
+          Icon={IoLogoLinkedin}
+          redirect="https://www.linkedin.com/in/serena-indij-da-costa/"
+          color="#0c65c3"
+        />
       </div>
 
       <button type="button" className="CV">

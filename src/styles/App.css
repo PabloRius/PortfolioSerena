@@ -82,6 +82,14 @@
       height: calc(100dvh - 40px);
 
       padding: 20px 100px;
+      justify-content: space-evenly;
+
+      background: linear-gradient(
+        180deg,
+        rgba(86, 224, 160, 0.15) 0%,
+        rgba(86, 224, 160, 0.07) 50%,
+        rgba(86, 224, 160, 0) 100%
+      );
 
       > .MailLink {
         display: flex;
@@ -119,6 +127,7 @@
         border-radius: 25px;
         cursor: pointer;
         transition: box-shadow 0.2s ease;
+        margin-bottom: 20px;
 
         &:active {
           box-shadow: inset 0 0 10px 2px rgb(41, 98, 41);
@@ -158,9 +167,130 @@
       }
     }
     > .TimelineSection {
+      position: relative;
       width: 100%;
-      height: 100dvh;
       margin-top: 50px;
+
+      > .Timeline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        .Joint {
+          opacity: inherit;
+          border-radius: 10px;
+          display: flex;
+          position: absolute;
+
+          border-top: solid 4px black;
+          border-bottom: solid 4px black;
+          width: 40px;
+          transition: width 1.5s ease;
+        }
+        .Content {
+          position: relative;
+          width: calc(80% - 40px);
+          height: calc(50% - 40px);
+          margin: auto;
+          border: solid 1px black;
+          border-radius: 2px;
+          > .Date {
+            width: max-content;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 0;
+            background-color: white;
+            border: solid 1px black;
+            border-radius: 2px;
+            padding: 5px 10px;
+          }
+          > .Text {
+            padding: 20px;
+            ul {
+              list-style: circle;
+            }
+          }
+        }
+
+        > .Left {
+          position: relative;
+          display: flex;
+          height: 100vh;
+          width: 50%;
+          align-self: flex-start;
+          transition: opacity ease 2s;
+          &.fade-in {
+            opacity: 1;
+          }
+          &.fade-out {
+            opacity: 0;
+            > .Joint {
+              width: 0;
+            }
+          }
+          > .Joint {
+            top: 50%;
+            left: 100%;
+            transform: translate(-100%, -50%);
+          }
+          > .Content {
+            margin-right: 50px;
+            .Date {
+              right: 15px;
+            }
+          }
+        }
+
+        > .Right {
+          &:first-child {
+            margin-top: 100dvh;
+          }
+          position: relative;
+          display: flex;
+          height: 100dvh;
+          width: 50%;
+          align-self: flex-end;
+          position: relative;
+          transition: opacity ease 3s;
+          &.fade-in {
+            opacity: 1;
+          }
+          &.fade-out {
+            opacity: 0;
+            > .Joint {
+              width: 0;
+            }
+          }
+          > .Joint {
+            top: 50%;
+            right: 100%;
+            transform: translate(100%, -50%);
+          }
+          > .Content {
+            margin-left: 50px;
+            .Date {
+              left: 15px;
+            }
+          }
+        }
+
+        .SeparatorBig {
+          display: flex;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          border-left: solid 4px black;
+          border-right: solid 4px black;
+          height: 100%;
+          z-index: 200;
+          border-radius: 10px;
+        }
+        .SeparatorSmall {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -213,6 +343,20 @@
         > .ref {
           position: absolute;
           top: calc(100dvh - 100px);
+        }
+      }
+      > .TimelineSection {
+        width: 100%;
+        height: 100dvh;
+        margin-top: 50px;
+
+        > .Timeline {
+          .SeparatorBig {
+            display: none;
+          }
+          .SeparatorSmall {
+            display: flex;
+          }
         }
       }
     }
