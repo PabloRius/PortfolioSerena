@@ -169,6 +169,7 @@
     > .TimelineSection {
       position: relative;
       width: 100%;
+      height: auto;
       margin-top: 50px;
 
       > .Timeline {
@@ -177,6 +178,7 @@
         flex-direction: column;
         height: 100%;
         width: 100%;
+        overflow: hidden;
         .Joint {
           opacity: inherit;
           border-radius: 10px;
@@ -186,7 +188,7 @@
           border-top: solid 4px black;
           border-bottom: solid 4px black;
           width: 40px;
-          transition: width 1.5s ease;
+          transition: width 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
         .Content {
           position: relative;
@@ -211,6 +213,22 @@
               list-style: circle;
             }
           }
+          > .Image {
+            position: relative;
+            /* transform: translateY(95%); */
+            bottom: 0;
+            right: 15px;
+            background-color: white;
+            border: solid 1px black;
+            border-radius: 2px;
+            padding: 10px;
+            width: 60%;
+            height: auto;
+            > img {
+              max-width: 100%;
+              aspect-ratio: initial;
+            }
+          }
         }
 
         > .Left {
@@ -219,12 +237,12 @@
           height: 100vh;
           width: 50%;
           align-self: flex-start;
-          transition: opacity ease 2s;
+          transition: opacity ease 1.5s;
           &.fade-in {
             opacity: 1;
           }
           &.fade-out {
-            opacity: 0;
+            opacity: 0.1;
             > .Joint {
               width: 0;
             }
@@ -239,6 +257,9 @@
             .Date {
               right: 15px;
             }
+            > .Image {
+              right: 50%;
+            }
           }
         }
 
@@ -252,12 +273,12 @@
           width: 50%;
           align-self: flex-end;
           position: relative;
-          transition: opacity ease 3s;
+          transition: opacity ease 1.5s;
           &.fade-in {
             opacity: 1;
           }
           &.fade-out {
-            opacity: 0;
+            opacity: 0.1;
             > .Joint {
               width: 0;
             }
@@ -271,6 +292,9 @@
             margin-left: 50px;
             .Date {
               left: 15px;
+            }
+            .Image {
+              left: 50%;
             }
           }
         }

@@ -78,6 +78,10 @@ export function TimelineSection() {
                     )}
                   </div>
                 </div>
+                <div className="Image">
+                  <img src={data.imageUrl} alt={data.title} />
+                  {/* <p>{data.location}</p> */}
+                </div>
               </div>
             </div>
           );

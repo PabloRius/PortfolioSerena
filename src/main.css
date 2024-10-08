@@ -16,6 +16,11 @@ a {
   color: black;
 }
 
+p {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0;
+}
+
 svg {
   &:focus {
     outline: none;
