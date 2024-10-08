@@ -20,12 +20,13 @@ export function HeroSection() {
     <section className="HeroSection">
       <div className="Presentation">
         <p>
-          Hi! I’m Serena, a curious half Brazilian half Argentinian master's
-          student who has lived all over the world —9 countries so far! I’m
-          passionate about hiking and cooking, and I’m currently completing my
-          Dual Master’s degree at Sciences Po in Paris and LSE in London. If
-          you’d like to know more about me, feel free to scroll down and don’t
-          forget to download my CV!
+          Hey there! I’m Serena – a curious mix of Brazilian, Argentinian, and
+          Spanish, and I’ve lived in 9 countries (and counting!). I’m fluent in
+          Spanish, Portuguese, and English, and picking up French along the way.
+          When I’m not busy with my Dual Master’s between Sciences Po in Paris
+          and LSE in London, you’ll find me hiking, cooking, or getting creative
+          with ceramics. Want to know more? Scroll down and don’t forget to grab
+          my CV!
         </p>
         <div className="Image">
           <img src={Profile} alt="Serena Indij da Costa in Paris" />

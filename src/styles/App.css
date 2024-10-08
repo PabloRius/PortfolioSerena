@@ -14,6 +14,15 @@
   }
 }
 
+:root {
+  --main-green: #aeb490;
+  --main-green-light: #f1f3e8;
+  --main-green-dark: #8d9177;
+  --main-green-shade2: #8d917726;
+  --main-green-shade1: #8d917712;
+  --main-green-shade0: #8d917700;
+}
+
 .App {
   display: flex;
   min-height: 100dvh;
@@ -88,9 +97,9 @@
 
       background: linear-gradient(
         180deg,
-        #367da226 0%,
-        #367da212 50%,
-        #367da200 100%
+        var(--main-green-shade2) 0%,
+        var(--main-green-shade1) 50%,
+        var(--main-green-shade0) 100%
       );
 
       > .MailLink {
@@ -147,13 +156,13 @@
           align-items: center;
           justify-content: center;
           padding: 40px 30px;
-          background-color: #367da2;
+          background-color: var(--main-green);
           color: white;
           font-weight: bold;
           width: max-content;
           margin: 0 auto;
           font-size: clamp(1.35rem, 4vw, 1.85rem);
-          border: solid 2px #2e6b8b;
+          border: solid 2px var(--main-green-dark);
           border-radius: 25px;
           cursor: pointer;
           transition: box-shadow 0.2s ease;
@@ -200,8 +209,8 @@
           display: flex;
           position: absolute;
 
-          border-top: solid 4px #367da2;
-          border-bottom: solid 4px #367da2;
+          border-top: solid 4px var(--main-green);
+          border-bottom: solid 4px var(--main-green);
           width: 40px;
           transition: width 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
@@ -217,7 +226,7 @@
             position: absolute;
             transform: translateY(-50%);
             top: 0;
-            background-color: #ddf3ff;
+            background-color: var(--main-green-light);
             border: solid 1px black;
             border-radius: 2px;
             padding: 5px 10px;
@@ -332,8 +341,8 @@
           top: 0;
           left: 50%;
           transform: translateX(-50%);
-          border-left: solid 4px #367da2;
-          border-right: solid 4px #367da2;
+          border-left: solid 4px var(--main-green);
+          border-right: solid 4px var(--main-green);
           height: 100%;
           z-index: 200;
           border-radius: 10px;
@@ -475,8 +484,8 @@
             top: 0;
             right: 0;
             transform: none;
-            border-left: solid 4px #367da2;
-            border-right: solid 4px #367da2;
+            border-left: solid 4px var(--main-green);
+            border-right: solid 4px var(--main-green);
             height: 100%;
             z-index: 200;
             border-radius: 10px;
