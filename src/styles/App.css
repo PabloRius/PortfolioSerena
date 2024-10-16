@@ -254,10 +254,8 @@
             }
             .Description {
               color: rgb(42, 42, 42);
+              p,
               .Subtitle {
-                font-size: 16px;
-              }
-              p {
                 font-size: clamp(1.1rem, 3vw, 1.15rem);
               }
             }
