@@ -22,7 +22,7 @@ export function HeroSection() {
         <p>
           <h3>{'Hey there! I’m Serena'}</h3>
           {
-            'A curious mix of Brazilian, Argentinian, and Spanish, and I’ve lived in 9 countries (and counting!). I’m fluent in Spanish, Portuguese, and English, and picking up French along the way. When I’m not busy with my Dual Master’s between Sciences Po in Paris and LSE in London, you’ll find me hiking, cooking, or getting creative with ceramics. Want to know more? Scroll down and don’t forget to grab my CV!'
+            'A curious mix of Brazilian, Argentinian, and Spanish, I’ve lived in 9 countries, which gives me a unique, open-minded perspective. Fluent in Spanish, Portuguese, and English, and learning French, I thrive on building strong interpersonal relationships and crafting creative solutions. Currently pursuing a Dual Master’s between Sciences Po in Paris and LSE in London, I’m results-oriented and always focused on what matters most. When I’m not studying, you’ll find me hiking, cooking, or working with ceramics. Want to know more? Scroll down and grab my CV!'
           }
         </p>
         <div className="Image">
