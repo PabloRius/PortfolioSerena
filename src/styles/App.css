@@ -126,10 +126,14 @@
         column-gap: 30px;
         justify-content: space-between;
         > p {
+          h3 {
+            font-size: clamp(1.4rem, 3vw, 1.75rem);
+          }
           width: 60%;
           display: flex;
+          flex-direction: column;
           margin: 0;
-          font-size: clamp(1.35rem, 3vw, 1.8rem);
+          font-size: clamp(1.35rem, 3vw, 1.7rem);
         }
         > .Image {
           max-width: 40%;
@@ -140,7 +144,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          img {
+          > img {
             max-height: 100%;
             width: auto;
           }
@@ -234,7 +238,7 @@
           > .Text {
             padding: 20px;
             .Title {
-              font-size: 20px;
+              font-size: clamp(1.2rem, 3vw, 1.45rem);
               text-decoration: bold;
               color: black;
             }
@@ -250,6 +254,9 @@
             }
             .Description {
               color: rgb(42, 42, 42);
+              p {
+                font-size: clamp(1.1rem, 3vw, 1.15rem);
+              }
             }
             ul {
               list-style: circle;
@@ -266,9 +273,26 @@
             padding: 10px;
             width: 60%;
             height: auto;
-            > img {
+            > .FaceImage {
               max-width: 100%;
               aspect-ratio: initial;
+            }
+            > .IconImage {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: white;
+              border: solid 1px black;
+              border-radius: 2px;
+              padding: 4px;
+              position: absolute;
+              transform: translate(0, -50%);
+              top: 15%;
+              right: -20%;
+              max-width: 30%;
+              img {
+                max-width: 100%;
+              }
             }
           }
         }
@@ -337,6 +361,10 @@
             }
             .Image {
               right: -38%;
+              .IconImage {
+                right: unset;
+                left: -20%;
+              }
             }
           }
         }
@@ -450,7 +478,7 @@
               padding: 10px;
               width: 60%;
               height: auto;
-              > img {
+              > .FaceImage {
                 max-width: 100%;
                 aspect-ratio: initial;
               }
@@ -478,6 +506,10 @@
                 right: 15px;
                 left: unset;
                 bottom: -10px;
+                .IconImage {
+                  left: unset;
+                  right: -20%;
+                }
               }
             }
           }

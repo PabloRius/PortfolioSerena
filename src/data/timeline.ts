@@ -1,13 +1,28 @@
-import LSE from '../assets/images/LSE.jpg';
-import OECD from '../assets/images/OECD.jpg';
-import SCPO from '../assets/images/SCPO.jpg';
-import SYD1 from '../assets/images/SYD1.jpg';
-import SYD2 from '../assets/images/SYD2.jpg';
-import COLPOLSOC from '../assets/images/COLPOLSOC.jpg';
-import BAIR from '../assets/images/BAIR.jpg';
-import UVIC from '../assets/images/UVIC.jpg';
-import COP from '../assets/images/COP.jpg';
-import UC3M from '../assets/images/UC3M.jpg';
+import {
+  AAPS,
+  BAIR,
+  COLPOLSOC,
+  COP,
+  LSE,
+  OECD,
+  SCPO,
+  SYD1,
+  SYD2,
+  UC3M,
+  UVIC,
+} from '../assets/images/images';
+
+import {
+  BAIRLogo,
+  COLPOLSOCLogo,
+  COPLogo,
+  LSELogo,
+  OECDLogo,
+  SCPOLogo,
+  UC3MLogo,
+  UNSWLogo,
+  UVICLogo,
+} from '../assets/icons/icons';
 
 import {
   CA,
@@ -28,6 +43,7 @@ interface timelineComponent {
   location: string;
   imageUrl?: string;
   flag: FlagComponent;
+  icon?: string;
 }
 
 export const timeline: Array<timelineComponent> = [
@@ -39,6 +55,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: LSE,
     location: 'London, United Kingdom',
     flag: GB,
+    icon: LSELogo,
   },
   {
     date: 'May 2024 - Sep 2024',
@@ -51,6 +68,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: OECD,
     location: 'Amsterdam, Netherlands',
     flag: NL,
+    icon: OECDLogo,
   },
   {
     date: 'Sep 2023 - May 2024',
@@ -60,6 +78,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: SCPO,
     location: 'Paris, France',
     flag: FR,
+    icon: SCPOLogo,
   },
   {
     date: 'Sep 2018 - May 2023',
@@ -69,6 +88,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: UC3M,
     location: 'Madrid, Spain',
     flag: ES,
+    icon: UC3MLogo,
   },
   {
     date: 'Jan 2023 - May 2023',
@@ -83,6 +103,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: SYD1,
     location: 'Sydney, Australia',
     flag: AU,
+    icon: UNSWLogo,
   },
   {
     date: 'Dec 2022 - May 2023',
@@ -91,6 +112,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: SYD2,
     location: 'Sydney, Australia',
     flag: AU,
+    icon: UNSWLogo,
   },
   {
     date: 'Oct 2022 - Dec 2022',
@@ -104,6 +126,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: COLPOLSOC,
     location: 'Madrid, Spain',
     flag: ES,
+    icon: COLPOLSOCLogo,
   },
   {
     date: 'Sep 2022 - Dec 2022',
@@ -112,6 +135,7 @@ export const timeline: Array<timelineComponent> = [
     text: 'Collaborated in the design of international development projects, organising fundraising events and running the economic logistics behind the NGO.',
     location: 'Madrid, Spain',
     flag: ES,
+    imageUrl: AAPS,
   },
   {
     date: 'May 2022 - Jul 2022',
@@ -120,6 +144,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: BAIR,
     location: 'Buenos Aires, Argentina',
     flag: AR,
+    icon: BAIRLogo,
   },
   {
     date: 'Jan 2022 - May 2022',
@@ -128,6 +153,7 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: UVIC,
     location: 'Vancouver Island, Canada',
     flag: CA,
+    icon: UVICLogo,
   },
   {
     date: 'Jan 2021 - Jun 2021',
@@ -136,5 +162,6 @@ export const timeline: Array<timelineComponent> = [
     imageUrl: COP,
     location: 'Copenhagen, Denmark',
     flag: DK,
+    icon: COPLogo,
   },
 ];

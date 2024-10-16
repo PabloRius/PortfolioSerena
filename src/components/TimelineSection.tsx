@@ -45,7 +45,7 @@ export function TimelineSection() {
 
   return (
     <section className="TimelineSection">
-      <h2>A walk through Serena's life</h2>
+      <h2>A flight through Serena's life ✈️</h2>
       <div className="Timeline">
         {timeline.map((data, idx) => {
           const side = idx % 2 === 0 ? 'Left' : 'Right';
@@ -103,7 +103,20 @@ export function TimelineSection() {
                 </div>
                 {data.imageUrl && (
                   <div className="Image">
-                    <img src={data.imageUrl} alt={data.title} />
+                    <img
+                      src={data.imageUrl}
+                      alt={data.title}
+                      className="FaceImage"
+                    />
+                    {data.icon && (
+                      <div className="IconImage">
+                        <img
+                          src={data.icon}
+                          alt={data.title}
+                          className="IconImage"
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
