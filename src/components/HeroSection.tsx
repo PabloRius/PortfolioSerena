@@ -33,7 +33,7 @@ export function HeroSection() {
         <div className="SocialIcons">
           <SocialIcon
             Icon={IoMail}
-            redirect="mailto::s.indij-da-costa@lse.ac.uk"
+            redirect="mailto:s.indij-da-costa@lse.ac.uk"
             color="#367da2"
           />
           <SocialIcon
