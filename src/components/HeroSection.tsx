@@ -20,13 +20,10 @@ export function HeroSection() {
     <section className="HeroSection">
       <div className="Presentation">
         <p>
-          <h3>Hey there! I’m Serena</h3>A curious mix of Brazilian, Argentinian,
-          and Spanish, and I’ve lived in 9 countries (and counting!). I’m fluent
-          in Spanish, Portuguese, and English, and picking up French along the
-          way. When I’m not busy with my Dual Master’s between Sciences Po in
-          Paris and LSE in London, you’ll find me hiking, cooking, or getting
-          creative with ceramics. Want to know more? Scroll down and don’t
-          forget to grab my CV!
+          <h3>{'Hey there! I’m Serena'}</h3>
+          {
+            'A curious mix of Brazilian, Argentinian, and Spanish, and I’ve lived in 9 countries (and counting!). I’m fluent in Spanish, Portuguese, and English, and picking up French along the way. When I’m not busy with my Dual Master’s between Sciences Po in Paris and LSE in London, you’ll find me hiking, cooking, or getting creative with ceramics. Want to know more? Scroll down and don’t forget to grab my CV!'
+          }
         </p>
         <div className="Image">
           <img src={Profile} alt="Serena Indij da Costa in Paris" />
