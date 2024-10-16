@@ -73,9 +73,7 @@ export function TimelineSection() {
                     </div>
                   )}
                   <div className="Description">
-                    <p className="Subtitle">
-                      <i>{data.subtitle}</i>
-                    </p>
+                    <p className="Subtitle">{data.subtitle}</p>
                     {Array.isArray(data.text) &&
                     data.title !==
                       'Research Assistant, University of New South Wales' ? (
