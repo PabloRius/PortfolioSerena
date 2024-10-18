@@ -74,29 +74,28 @@ export function TimelineSection() {
                   )}
                   <div className="Description">
                     <p className="Subtitle">{data.subtitle}</p>
-                    {Array.isArray(data.text) &&
-                    data.title !==
-                      'Research Assistant, University of New South Wales' ? (
-                      <ul>
-                        {data.text.map((line, index) => (
-                          <li key={index}>
-                            <p>{line}</p>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : Array.isArray(data.text) &&
-                      data.title ===
-                        'Research Assistant, University of New South Wales' ? (
-                      <>
-                        <p>{data.text[0]}</p>
+                    {Array.isArray(data.text) ? (
+                      data.title === 'University of New South Wales' &&
+                      data.subtitle === 'Research Assistant.' ? (
+                        <>
+                          <p>{data.text[0]}</p>
+                          <ul>
+                            {data.text.slice(1, -1).map((line, index) => (
+                              <li key={index}>
+                                <p>{line}</p>
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      ) : (
                         <ul>
-                          {data.text.slice(1, -1).map((line, index) => (
+                          {data.text.map((line, index) => (
                             <li key={index}>
                               <p>{line}</p>
                             </li>
                           ))}
                         </ul>
-                      </>
+                      )
                     ) : (
                       <p>{data.text}</p>
                     )}

@@ -53,7 +53,11 @@ export const timeline: Array<timelineComponent> = [
     title: 'LSE',
     subtitle:
       'MSc in Development Management (Specialisation in Applied Development Economics).',
-    text: 'As part of my masters I am participating in a consultancy project, which  provides me with an opportunity to apply the analytical tools and critical thinking skills that I learn  to a ‘real world’ issue. I am also taking courses on: Applied Policy Analysis for Macroeconomic Development, Applied Econometrics and Development Management.',
+    text: [
+      'Consultancy project: to be decided.',
+      'Courses in: Foundations of Applied Econometrics for Economic Development Policy; Applied Policy Analysis for Macroeconomic Development; and Microeconomic Analysis.',
+      'Part time job: LSE Student Content Creator.',
+    ],
     imageUrl: LSE,
     location: 'London, United Kingdom',
     flag: GB,
@@ -78,7 +82,10 @@ export const timeline: Array<timelineComponent> = [
     title: 'Sciences Po',
     subtitle:
       'MA in International Economic Policy (Concentration in Diplomacy).',
-    text: 'Courses on Applied Econometrics with STATA, Political Economy of Development and Growth, International Trade, Macroeconomics and Communications.',
+    text: [
+      'Courses on Applied Econometrics with STATA, Political Economy of Development and Growth, International Trade, Macroeconomics and Communications.',
+      'Member of the Fédération Pour la Diplomatie et les Nations Unies, focused on event planning.',
+    ],
     imageUrl: SCPO,
     location: 'Paris, France',
     flag: FR,
@@ -88,7 +95,10 @@ export const timeline: Array<timelineComponent> = [
     date: 'Sep 2018 - May 2023',
     title: 'Universidad Carlos III de Madrid',
     subtitle: 'Dual Bachelor in International Studies and Political Sciences.',
-    text: 'Courses on Statistics, STATA or Macroeconomics, Microeconomics and International Finance.',
+    text: [
+      'Courses on Statistics, STATA or Macroeconomics, Microeconomics and International Finance.',
+      'Participated on several MUNs.',
+    ],
     imageUrl: UC3M,
     location: 'Madrid, Spain',
     flag: ES,
@@ -139,7 +149,11 @@ export const timeline: Array<timelineComponent> = [
     date: 'Sep 2022 - Dec 2022',
     title: 'Association for the Support of the Syrian People',
     subtitle: 'International Cooperation Project Intern.',
-    text: 'Collaborated in the design of international development projects, organising fundraising events and running the economic logistics behind the NGO.',
+    text: [
+      'Design of international development projects.',
+      'Fundraising event organisation.',
+      'Every day economic logistics behind the NGO.',
+    ],
     location: 'Madrid, Spain',
     flag: ES,
     imageUrl: AAPS,
@@ -158,7 +172,7 @@ export const timeline: Array<timelineComponent> = [
     date: 'Jan 2022 - May 2022',
     title: 'University of Victoria',
     subtitle: 'Undergraduate exchange.',
-    text: 'Took Political Sciences courses focused on Ethics in International Relations, the inner workings of the European Union, Latin American Politics and Society, International Politics of Trade and experimental.',
+    text: 'Took Political Sciences courses focused on Ethics in International Relations, the inner workings of the European Union, Latin American Politics and Society and International Politics of Trade.',
     imageUrl: UVIC,
     location: 'Vancouver Island, Canada',
     flag: CA,
