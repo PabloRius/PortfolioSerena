@@ -3,6 +3,7 @@ import {
   BAIR,
   COLPOLSOC,
   COP,
+  IDB,
   LSE,
   OECD,
   SCPO,
@@ -49,12 +50,24 @@ interface timelineComponent {
 
 export const timeline: Array<timelineComponent> = [
   {
+    date: 'Oct 2024 - May 2025',
+    title: 'Inter-American Development Bank (IDB)',
+    subtitle: 'Consultancy Project.',
+    text: [
+      "Development of a policy toolkit to guide ethical AI integration in LAC's public and private sectors.",
+      'Review and comparison of AI governance in high-income countries to inform LAC policies.',
+      'Creation of a questionnaire to help LAC countries develop AI strategies.',
+    ],
+    imageUrl: IDB,
+    location: 'London, United Kingdom',
+    flag: GB,
+  },
+  {
     date: 'Sep 2024 - Aug 2025',
     title: 'LSE',
     subtitle:
       'MSc in Development Management (Specialisation in Applied Development Economics).',
     text: [
-      'Consultancy project: to be decided.',
       'Courses in: Foundations of Applied Econometrics for Economic Development Policy; Applied Policy Analysis for Macroeconomic Development; and Microeconomic Analysis.',
       'Part time job: LSE Student Content Creator.',
     ],

@@ -9,5 +9,19 @@ import UVIC from './UVIC.jpg';
 import COP from './COP.jpg';
 import UC3M from './UC3M.jpg';
 import AAPS from './AAPS.jpeg';
+import IDB from './IDB.jpg';
 
-export { LSE, OECD, SCPO, SYD1, SYD2, COLPOLSOC, BAIR, UVIC, COP, UC3M, AAPS };
+export {
+  LSE,
+  OECD,
+  SCPO,
+  SYD1,
+  SYD2,
+  COLPOLSOC,
+  BAIR,
+  UVIC,
+  COP,
+  UC3M,
+  AAPS,
+  IDB,
+};
