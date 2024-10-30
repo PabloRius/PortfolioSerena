@@ -50,9 +50,9 @@ interface timelineComponent {
 
 export const timeline: Array<timelineComponent> = [
   {
-    date: 'Oct 2024 - May 2025',
+    date: 'Oct 2024 - Mar 2025',
     title: 'Inter-American Development Bank (IDB)',
-    subtitle: 'Consultancy Project.',
+    subtitle: 'Student Consultancy Project (part of LSE).',
     text: [
       "Development of a policy toolkit to guide ethical AI integration in LAC's public and private sectors.",
       'Review and comparison of AI governance in high-income countries to inform LAC policies.',
