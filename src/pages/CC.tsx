@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { DefaultLayout } from '../layouts/DefaultLayout';
 import { videos } from '../data/videos';
@@ -9,6 +9,10 @@ export const CC = () => {
   const LOAD_MORE_COUNT = 6; // Cuántos videos cargar con cada clic
 
   const [loadedVideos, setLoadedVideos] = useState(INITIAL_COUNT);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Función para cargar más videos
   const handleLoadMore = () => {
