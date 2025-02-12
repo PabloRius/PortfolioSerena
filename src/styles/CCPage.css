@@ -1,0 +1,42 @@
+.CCPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.Videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px 0;
+  gap: 50px;
+  flex-wrap: wrap;
+  list-style: none;
+
+  .VideoCategory {
+    width: clamp(150px, 20vw, 200px);
+    aspect-ratio: 1;
+    max-width: calc(100% - 100px);
+    display: flex;
+    place-items: center center;
+    place-content: center center;
+    border: 2px solid var(--main-green);
+    background-color: var(--main-green-light);
+    border-radius: 10px;
+    cursor: pointer;
+    &.selected {
+      text-decoration: underline;
+    }
+  }
+
+  .Video {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .VideosRow {
+    flex-direction: column;
+    place-content: center center;
+    place-items: center center;
+  }
+}

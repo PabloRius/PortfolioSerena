@@ -1,14 +1,16 @@
-import { LatBar } from './components/LatBar';
+import { Route, Routes } from 'react-router';
+
 import { Main } from './pages/Main';
 
 import './styles/App.css';
+import { CC } from './pages/CC';
 
 export function App() {
   return (
-    <div className="App">
-      <Main />
-      <LatBar />
-    </div>
+    <Routes>
+      <Route index Component={Main} />
+      <Route path="content_creator" Component={CC} />
+    </Routes>
   );
 }
 

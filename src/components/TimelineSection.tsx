@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { timeline } from '../data/timeline';
+import { Link } from 'react-router';
 
 export function TimelineSection() {
   const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -89,11 +90,34 @@ export function TimelineSection() {
                         </>
                       ) : (
                         <ul>
-                          {data.text.map((line, index) => (
-                            <li key={index}>
-                              <p>{line}</p>
-                            </li>
-                          ))}
+                          {data.text.map((line, index) => {
+                            if (
+                              line ===
+                              'Part time job: LSE Student Content Creator.'
+                            )
+                              return (
+                                <Link to={'content_creator'}>
+                                  <li key={index}>
+                                    <p>
+                                      {line}{' '}
+                                      <b
+                                        style={{
+                                          fontSize:
+                                            'clamp(0.8rem, 3vw, 0.95rem)',
+                                        }}
+                                      >
+                                        Click here to see my videos
+                                      </b>
+                                    </p>
+                                  </li>
+                                </Link>
+                              );
+                            return (
+                              <li key={index}>
+                                <p>{line}</p>
+                              </li>
+                            );
+                          })}
                         </ul>
                       )
                     ) : (

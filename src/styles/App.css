@@ -125,7 +125,7 @@
         align-items: center;
         column-gap: 30px;
         justify-content: space-between;
-        > p {
+        > .Text {
           h3 {
             font-size: clamp(1.4rem, 3vw, 1.75rem);
           }
@@ -257,6 +257,11 @@
               p,
               .Subtitle {
                 font-size: clamp(1.1rem, 3vw, 1.15rem);
+              }
+              a {
+                b {
+                  text-decoration: underline;
+                }
               }
             }
             ul {
