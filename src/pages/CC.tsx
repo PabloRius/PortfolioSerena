@@ -21,7 +21,8 @@ export const CC = () => {
         <h2
           style={{
             margin: '30px auto',
-            width: 'max-content',
+            maxWidth: '90%',
+            textAlign: 'center',
             fontSize: '32px',
           }}
         >
