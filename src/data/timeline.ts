@@ -79,7 +79,7 @@ export const timeline: Array<timelineComponent> = [
   {
     date: 'May 2024 - Sep 2024',
     title: 'OECD Watch',
-    subtitle: 'Intern.',
+    subtitle: 'Responsible Business Conduct Intern.',
     text: [
       ' Provide information and advice on the application of the OECD Guidelines for Multinational Enterprises on Responsible Business Conduct.',
       ' Development of a database to analyse the performance of the OECD National Contact Points.',
