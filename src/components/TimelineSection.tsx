@@ -102,8 +102,7 @@ export function TimelineSection() {
                                       {line}{' '}
                                       <b
                                         style={{
-                                          fontSize:
-                                            'clamp(0.8rem, 3vw, 0.95rem)',
+                                          color: 'rgb(9, 78, 32)',
                                         }}
                                       >
                                         Click here to see my videos

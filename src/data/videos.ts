@@ -12,45 +12,61 @@ export const videos: Video[] = [
     title: 'Bad Bunny DTMF',
   },
   {
-    url: 'https://www.instagram.com/reel/DFcMpMutoCl/?utm_source=ig_web_copy_link',
-    title: 'Croissant Day',
-  },
-  {
-    url: 'https://www.instagram.com/reel/DFNY-SgqnOJ/?utm_source=ig_web_copy_link',
-    title: 'London cringe',
-  },
-  {
-    url: 'https://www.instagram.com/reel/DEmqRisAwZp/?utm_source=ig_web_copy_link',
-    title: 'Spanish Restaurant',
-  },
-  {
     url: 'https://www.instagram.com/reel/DEeZd_KAFoZ/?utm_source=ig_web_copy_link',
     title: 'GM London',
   },
   {
-    url: 'https://www.instagram.com/reel/DEPDmfQtPFz/?utm_source=ig_web_copy_link',
-    title: 'December Recap',
-  },
-  {
-    url: 'https://www.instagram.com/reel/DEE3RdItX-9/?utm_source=ig_web_copy_link',
-    title: 'Farmers Markets',
+    url: 'https://www.instagram.com/reel/DGC7YLEqChR/?igsh=MWlyMHE3am9lM3R6eQ==',
+    title: 'Day in my life',
   },
   {
     url: 'https://www.instagram.com/reel/DDbV82bs6rO/?utm_source=ig_web_copy_link',
     title: 'Day in the Life',
   },
   {
-    url: 'https://www.instagram.com/reel/DDOk4GlvUom/?utm_source=ig_web_copy_link',
-    title: 'Cafe near Campus',
+    url: 'https://www.instagram.com/reel/DFNY-SgqnOJ/?utm_source=ig_web_copy_link',
+    title: 'London cringe',
   },
   {
     url: 'https://www.instagram.com/reel/DDJiJImvZd-/?utm_source=ig_web_copy_link',
     title: 'Student Diaries',
   },
-  // Least
+  {
+    url: 'https://www.instagram.com/reel/DEPDmfQtPFz/?utm_source=ig_web_copy_link',
+    title: 'December Recap',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DEmqRisAwZp/?utm_source=ig_web_copy_link',
+    title: 'Spanish Restaurant',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DEE3RdItX-9/?utm_source=ig_web_copy_link',
+    title: 'Farmers Markets',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DFcMpMutoCl/?utm_source=ig_web_copy_link',
+    title: 'Croissant Day',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DDOk4GlvUom/?utm_source=ig_web_copy_link',
+    title: 'Cafe near Campus',
+  },
   {
     url: 'https://www.instagram.com/reel/DFaUbr0tNEK/?utm_source=ig_web_copy_link',
     title: 'Comedy Club',
+  },
+  // Least
+  {
+    url: 'https://www.instagram.com/reel/DF7yxtZtCEC/?igsh=aHhoZDlmdnBqcThu',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DGAWmuftRfE/?igsh=bGR1bzB0YXM1Ymxp',
+    title: 'Seven dials',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DGFjpW_tttD/?igsh=Z3MyMnNhZXBtZHg0',
+    title: 'LSE merch',
   },
   {
     url: 'https://www.instagram.com/reel/DFptxhRtkB5/?utm_source=ig_web_copy_link',
