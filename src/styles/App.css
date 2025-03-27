@@ -543,3 +543,20 @@
     }
   }
 }
+
+.CCButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--main-green-dark) solid 1px;
+  background-color: var(--main-green);
+  padding: 10px 8px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+
+  p {
+    margin: 0;
+    color: var(--main-green-light);
+  }
+}

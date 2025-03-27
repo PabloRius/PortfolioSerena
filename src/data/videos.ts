@@ -57,6 +57,30 @@ export const videos: Video[] = [
   },
   // Least
   {
+    url: 'https://www.instagram.com/reel/DHlaw0BNPvD/?igsh=c2RidDkxcnJvcGQw',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DHk_Kent4i1/?igsh=bTl0NjZramxnbjBm',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DHbPhCLtqSz/?igsh=MmtueWo3b3UwdHc0',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DHdestdNY-V/?igsh=bGNrcHV4YzQ0MThi',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DHTCjK0NeJb/?igsh=MXU2cGJyYTUzcGRiZA==',
+    title: 'Design museum',
+  },
+  {
+    url: 'https://www.instagram.com/reel/DHQOsbWth8Z/?igsh=NjBmYWlpZ3IyYXI2',
+    title: 'Design museum',
+  },
+  {
     url: 'https://www.instagram.com/reel/DF7yxtZtCEC/?igsh=aHhoZDlmdnBqcThu',
     title: 'Design museum',
   },

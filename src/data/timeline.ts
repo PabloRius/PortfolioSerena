@@ -26,15 +26,15 @@ import {
 } from '../assets/icons/icons';
 
 import {
-  CA,
-  ES,
+  AR,
   AU,
+  CA,
   DK,
-  NL,
+  ES,
+  FlagComponent,
   FR,
   GB,
-  AR,
-  FlagComponent,
+  NL,
 } from 'country-flag-icons/react/3x2';
 
 interface timelineComponent {
@@ -49,6 +49,19 @@ interface timelineComponent {
 }
 
 export const timeline: Array<timelineComponent> = [
+  {
+    date: 'Nov 2024 - Present',
+    title: 'Student Content Creator',
+    subtitle: 'The London School of Economics and Political Science (LSE)',
+    text: [
+      "Strategised content for LSE's social media pages reaching 454K followers amplifying awareness.",
+      'Produce and edit instagram Reels and TikTok content engaging with propective students across the globe',
+    ],
+    imageUrl: LSE,
+    location: 'London, United Kingdom',
+    flag: GB,
+    icon: LSELogo,
+  },
   {
     date: 'Oct 2024 - Mar 2025',
     title: 'Inter-American Development Bank (IDB)',

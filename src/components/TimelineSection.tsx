@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { timeline } from '../data/timeline';
 import { Link } from 'react-router';
+import { timeline } from '../data/timeline';
 
 export function TimelineSection() {
   const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -88,13 +88,32 @@ export function TimelineSection() {
                             ))}
                           </ul>
                         </>
+                      ) : data.title === 'Student Content Creator' ? (
+                        <>
+                          <ul>
+                            {data.text.map((line, index) => {
+                              return (
+                                <li key={index}>
+                                  <p>{line}</p>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                          <div className="CCButton">
+                            <Link to={'content_creator'}>
+                              <p>
+                                <b>Click here to see my videos</b>
+                              </p>
+                            </Link>
+                          </div>
+                        </>
                       ) : (
                         <ul>
                           {data.text.map((line, index) => {
                             if (
                               line ===
                               'Part time job: LSE Student Content Creator.'
-                            )
+                            ) {
                               return (
                                 <Link to={'content_creator'}>
                                   <li key={index}>
@@ -111,6 +130,7 @@ export function TimelineSection() {
                                   </li>
                                 </Link>
                               );
+                            }
                             return (
                               <li key={index}>
                                 <p>{line}</p>
