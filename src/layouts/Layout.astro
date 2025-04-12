@@ -1,0 +1,34 @@
+---
+import LatBar from "../components/LatBar.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/jpg" href="/star.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Serena Indij da Costa</title>
+  </head>
+  <body>
+    <div class="App flex flex-col sm:flex-row min-h-screen">
+      <main
+        class="Main relative ml-0 mt-[60px] sm:ml-[100px] sm:mt-0 flex-1 overflow-y-auto"
+      >
+        <slot />
+      </main>
+      <LatBar />
+    </div>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

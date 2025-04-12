@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-main-green: #aeb490;
+  --color-main-green-light: #f1f3e8;
+  --color-main-green-dark: #8d9177;
+  --color-main-green-shade2: #8d917726;
+  --color-main-green-shade1: #8d917712;
+  --color-main-green-shade0: #8d917700;
+}

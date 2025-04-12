@@ -1,0 +1,33 @@
+---
+import VideoGallery from "../components/VideoGallery";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Videos">
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <nav aria-label="Secondary navigation">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 px-4 py-2 text-lg bg-main-green-light hover:bg-main-green rounded-lg transition-colors"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Home
+      </a>
+    </nav>
+
+    <VideoGallery client:load />
+  </div>
+</Layout>

@@ -1,0 +1,129 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Flag from "../components/Flag";
+
+const timeline = await getCollection("timeline");
+const sortedTimeline = timeline.sort((a, b) => a.data.index - b.data.index);
+---
+
+<section
+  class="TimelineSection relative w-[100%] h-auto mt-10 sm:mt-0 flex flex-col gap-5"
+>
+  <h2 class="w-full text-center text-2xl sm:text-3xl my-3">
+    A flight through Serena's life ✈️
+  </h2>
+  <div
+    class="Timeline relative flex flex-col h-[100%] w-[90%] lg:w-[100%] gap-[20vh] pt-5 pb-10 overflow-hidden"
+  >
+    {
+      sortedTimeline.map(async (document, idx) => {
+        const { index, title, location, date, img, flag, icon } = document.data;
+        const side = idx % 2 === 0 ? "Left" : "Right";
+
+        const { Content } = await render(document);
+        return (
+          <div
+            data-timeline-block
+            class={`fade-out relative flex w-[100%] lg:w-[50%] h-auto transition-opacity ${side === "Left" ? "Left self-start" : "Right self-end [&:first-child]:mt-[100dvh]"}`}
+          >
+            <span
+              class={`Joint opacity-[inherit] rounded-2xl flex absolute border-y-4 border-main-green border-solid w-10 transition-all duration-[2s] ease-[cubic-bezier(0.075,0.82,0.165,1)] top-1/2 left-full right-[unset] translate-x-[-100%] translate-y-[-50%] ${side === "Left" ? "lg:left-full lg:right-[unset] lg:translate-x-[-100%] lg:translate-y-1/2" : "lg:right-[100%] lg:left-[unset] lg:translate-x-[100%] lg:translate-y-[-50%]"}`}
+            />
+            <div
+              class={`Content relative w-4/5 h-1/2 mx-0 lg:m-auto left-[5%] lg:left-[unset] border-solid border-1 border-black rounded-xs ${side === "Left" ? "lg:mr-12" : "lg:ml-12"}`}
+            >
+              <div
+                class={`w-max absolute translate-y-[-50%] top-0 right-3.5 bg-main-green-light border-solid border-[1px] border-black rounded-sm p-1.5 ${side === "Left" ? "lg:left-[unset]" : "lg:left-3.5 lg:right-[unset]"}`}
+              >
+                {date}
+              </div>
+              <div class="Text p-5">
+                <h3 class="text-[clamp(1.5rem,3vw,1.6rem)] font-bold text-black">
+                  {title}
+                </h3>
+                {location && (
+                  <div class="flex flex-row items-center gap-2 max-h-3.5 text-sm mt-2">
+                    <Flag flag={flag} />
+                    <i>{location}</i>
+                  </div>
+                )}
+                <div class="Description text-gray-800 text-left py-3 text-[clamp(1rem,3vw,1.2rem)]">
+                  <Content />
+                </div>
+              </div>
+              {img && (
+                <div
+                  class={`relative bottom-[-10px] right-3.5 bg-white border-solid border-[1px] border-black p-2.5 w-3/5 h-auto ${side === "Left" ? "lg:right-[5%]" : "lg:right-[-43%]"}`}
+                >
+                  <img
+                    src={`/src/assets/images/${img}`}
+                    alt={title}
+                    class="w-full"
+                  />
+                  {icon && (
+                    <div
+                      class={`bg-white border-solid border-[1px] border-black p-2 w-3/5 h-auto absolute translate-y-[-50%] top-[15%] right-[-20%] max-w-2/5 ${side === "Right" && "lg:right-[unset] lg:left-[-20%]"}`}
+                    >
+                      <img
+                        src={`/src/assets/icons/${icon}`}
+                        alt={title}
+                        class="w-full"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })
+    }
+    <div
+      class="hidden lg:flex absolute top-0 left-[50%] translate-x-[-50%] border-l-4 border-r-4 border-solid border-main-green h-full rounded-xl"
+    >
+    </div>
+    <div
+      class="flex lg:hidden absolute top-0 right-0 border-l-4 border-r-4 border-solid border-main-green h-full rounded-xl"
+    >
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("fade-out");
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+          entry.target.classList.add("fade-out");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    }
+  );
+
+  document.querySelectorAll("[data-timeline-block]").forEach((block) => {
+    observer.observe(block);
+  });
+</script>
+
+<style>
+  .Left,
+  .Right {
+    &.fade-in {
+      opacity: 1;
+    }
+    &.fade-out {
+      opacity: 0.1;
+      .Joint {
+        width: 0;
+      }
+    }
+  }
+</style>
