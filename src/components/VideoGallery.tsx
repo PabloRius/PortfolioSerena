@@ -17,28 +17,46 @@ export default function VideoGallery() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center my-8 max-w-[90%] mx-auto text-wrap">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+      <h2 className="text-4xl font-bold text-center mb-12 text-main-green-dark">
         Click on any video to watch it!
+        <span className="block mt-4 text-2xl font-normal text-gray-600">
+          My content creation work at LSE
+        </span>
       </h2>
 
-      <div className="flex flex-row justify-evenly mt-10 gap-10 flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {videos.slice(0, loadedVideos).map((video, index) => (
           <div
             key={index}
-            className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            className="relative group rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
           >
-            <InstagramEmbed url={video.link} width="326px" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <InstagramEmbed url={video.link} width="100%" />
           </div>
         ))}
       </div>
 
       {loadedVideos < videos.length && (
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-12">
           <button
-            className="block mx-auto my-5 px-5 py-2.5 text-lg bg-main-green text-white border-none rounded-md cursor-pointer transition-colors duration-300 hover:bg-main-green-dark"
+            className="flex cursor-pointer items-center gap-3 px-8 py-4 text-lg font-semibold bg-main-green text-white hover:bg-main-green-dark border-2 border-main-green-dark rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             onClick={handleLoadMore}
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="animate-bounce"
+            >
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
             Load More Videos
           </button>
         </div>
