@@ -2,10 +2,10 @@
 title: LSE
 location: London, United Kingdom
 date: Sep 2024 - Aug 2025
-img: LSE.jpg
-icon: LSELogo.png
-flag: "GB"
-index: 2
+img: LSE
+icon: LSELogo
+flag: GB
+index: 10
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">MSc in Development Management (Specialisation in Applied Development Economics).</h4>

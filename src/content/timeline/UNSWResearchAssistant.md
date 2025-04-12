@@ -2,9 +2,9 @@
 title: University of New South Wales
 location: Sydney, Australia
 date: Jan 2023 - May 2023
-img: SYD1.jpg
-icon: UNSWLogo.png
-flag: "AU"
+img: SYD1
+icon: UNSWLogo
+flag: AU
 index: 6
 ---
 

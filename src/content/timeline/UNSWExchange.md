@@ -2,10 +2,10 @@
 title: University of New South Wales
 location: Sydney, Australia
 date: Dec 2022 - May 2023
-img: SYD2.jpg
-icon: UNSWLogo.png
-flag: "AU"
-index: 7
+img: SYD2
+icon: UNSWLogo
+flag: AU
+index: 5
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Undergraduate exchange.</h4>

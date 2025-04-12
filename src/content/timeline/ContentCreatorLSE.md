@@ -2,10 +2,10 @@
 title: Student Content Creator
 location: London, United Kingdom
 date: Nov 2024 - Present
-img: CC.jpg
-icon: LSELogo.png
-flag: "GB"
-index: 0
+img: CC
+icon: LSELogo
+flag: GB
+index: 12
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">The London School of Economics and Political Science (LSE)</h4>

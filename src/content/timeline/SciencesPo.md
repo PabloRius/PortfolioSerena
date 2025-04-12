@@ -2,10 +2,10 @@
 title: Sciences Po
 location: Paris, France
 date: Sep 2023 - May 2024
-img: SCPO.jpg
-icon: SCPOLogo.png
-flag: "FR"
-index: 4
+img: SCPO
+icon: SCPOLogo
+flag: FR
+index: 8
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">MA in International Economic Policy (Concentration in Diplomacy).</h4>

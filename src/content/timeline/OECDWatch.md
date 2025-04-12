@@ -2,10 +2,10 @@
 title: OECD Watch
 location: Amsterdam, Netherlands
 date: May 2024 - Sep 2024
-img: OECD.jpg
-icon: OECDLogo.png
-flag: "NL"
-index: 3
+img: OECD
+icon: OECDLogo
+flag: NL
+index: 9
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Responsible Business Conduct Intern.</h4>

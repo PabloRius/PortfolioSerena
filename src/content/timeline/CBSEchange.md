@@ -2,10 +2,10 @@
 title: Copenhagen Business School
 location: Copenhagen, Denmark
 date: Jan 2021 - Jun 2021
-img: COP.jpg
-icon: COPLogo.png
-flag: "DK"
-index: 12
+img: COP
+icon: COPLogo
+flag: DK
+index: 0
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Undergraduate exchange.</h4>

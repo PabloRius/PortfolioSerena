@@ -2,10 +2,10 @@
 title: University of Victoria
 location: Vancouver Island, Canada
 date: Jan 2022 - May 2022
-img: UVIC.jpg
-icon: UVICLogo.jpg
-flag: "CA"
-index: 11
+img: UVIC
+icon: UVICLogo
+flag: CA
+index: 1
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Undergraduate exchange.</h4>

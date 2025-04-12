@@ -2,9 +2,9 @@
 title: Association for the Support of the Syrian People
 location: Madrid, Spain
 date: Sep 2022 - Dec 2022
-img: AAPS.jpeg
-flag: "ES"
-index: 9
+img: AAPS
+flag: ES
+index: 3
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">International Cooperation Project Intern.</h4>
