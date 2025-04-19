@@ -12,10 +12,13 @@ index: 12
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">
-        Strategised content for LSE's social media pages reaching 454K followers amplifying awareness.
+        Strategise official communications content for all of LSE’s social media chanels, reaching more than 1354000 followers.
     </li>
     <li class="ml-5 prose">
-        Produce and edit instagram Reels and TikTok content engaging with propective students across the globe.
+        Short video production and editing: focus on new scientific research, high profile events with senior politicans and scholars, LSE outreach initiatives and embassy visits.
+    </li>
+    <li class="ml-5 prose">
+        Managed more than 100 projects, tailoring messages to different audiences: politicians, press, business, civil society organisations, academics and younger generations.
     </li>
 </ol>
 <a href="content_creator" class="inline-block text-center border-2 border-main-green-dark bg-main-green hover:bg-main-green-dark text-white font-medium px-6 py-3 rounded-lg mt-4 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg mx-auto max-w-[280px] w-full">

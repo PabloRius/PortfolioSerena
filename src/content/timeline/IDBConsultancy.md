@@ -11,12 +11,12 @@ index: 11
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">
-        Development of a policy toolkit to guide ethical AI integration in LAC's public and private sectors.
+        Development of solutions with a consultative and client-based approach covering the end to end of the initiative. 
     </li>
     <li class="ml-5 prose">
-        Review and comparison of AI governance in high-income countries to inform LAC policies.
+        Trend identification and reporting of AI governance in high-income countries to select best practices and inform Latin America’s policies.
     </li>
     <li class="ml-5 prose">
-        Creation of a questionnaire to help LAC countries develop AI strategies.
+        Expert and high official interviews to develop a policy toolkit to guide ethical AI integration in Latin America’s public and private sectors.
     </li>
 </ol>
