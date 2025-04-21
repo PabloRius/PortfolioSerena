@@ -27,13 +27,15 @@ export default function VideoGallery() {
 
       <div className="flex flex-row justify-evenly mt-10 gap-10 flex-wrap">
         {videos.slice(0, loadedVideos).map((video, index) => (
-          <div
+          <a
+            href={video.link}
+            target="_blank"
             key={index}
             className="relative min-w-[328px] group rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <InstagramEmbed url={video.link} width="100%" />
-          </div>
+          </a>
         ))}
       </div>
 
