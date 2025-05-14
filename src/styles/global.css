@@ -2,9 +2,9 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-  --color-main-green: #84b234;
-  --color-main-green-light: #dff2bf;
-  --color-main-green-dark: #65940e;
+  --color-main-green: #94af65;
+  --color-main-green-light: #c8d4b3;
+  --color-main-green-dark: #758c4c;
   --color-main-green-shade2: #8d917726;
   --color-main-green-shade1: #8d917712;
   --color-main-green-shade0: #8d917700;
