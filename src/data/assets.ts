@@ -11,6 +11,7 @@ export const icons_map: Record<string, ImageMetadata> = {
   UC3MLogo: icons.UC3MLogo,
   UNSWLogo: icons.UNSWLogo,
   UVICLogo: icons.UVICLogo,
+  WTOLogo: icons.WTOLogo,
 };
 
 export const images_map: Record<string, ImageMetadata> = {
@@ -27,4 +28,5 @@ export const images_map: Record<string, ImageMetadata> = {
   SYD2: images.SYD2,
   UC3M: images.UC3M,
   UVIC: images.UVIC,
+  WTOFellow: images.WTOFellow,
 };

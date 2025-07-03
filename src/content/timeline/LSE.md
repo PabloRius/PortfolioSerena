@@ -1,5 +1,5 @@
 ---
-title: LSE
+title: The London School of Economics and Political Science (LSE)
 location: London, United Kingdom
 date: Sep 2024 - Aug 2025
 img: LSE

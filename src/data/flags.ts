@@ -3,6 +3,7 @@ import {
   AR,
   AU,
   CA,
+  CH,
   DK,
   ES,
   FR,
@@ -18,6 +19,7 @@ const Flags: Record<string, FlagComponent> = {
   FR: FR,
   GB: GB,
   NL: NL,
+  CH: CH,
 };
 
 export default Flags;
