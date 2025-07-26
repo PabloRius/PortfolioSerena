@@ -1,4 +1,5 @@
 import AAPS from "./AAPS.jpeg";
+import Allianz from "./Allianz.jpeg";
 import BAIR from "./BAIR.jpg";
 import CC from "./CC.jpg";
 import COLPOLSOC from "./COLPOLSOC.jpg";
@@ -15,6 +16,7 @@ import WTOFellow from "./WTOFellow.jpg";
 
 export {
   AAPS,
+  Allianz,
   BAIR,
   CC,
   COLPOLSOC,

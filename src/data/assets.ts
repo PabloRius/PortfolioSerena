@@ -29,4 +29,5 @@ export const images_map: Record<string, ImageMetadata> = {
   UC3M: images.UC3M,
   UVIC: images.UVIC,
   WTOFellow: images.WTOFellow,
+  Allianz: images.Allianz,
 };
