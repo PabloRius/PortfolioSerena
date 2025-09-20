@@ -1,3 +1,4 @@
+import AllianzLogo from "./AllianzLogo.jpeg";
 import BAIRLogo from "./BAIRLogo.png";
 import COLPOLSOCLogo from "./COLPOLSOCLogo.png";
 import COPLogo from "./COPLogo.png";
@@ -10,6 +11,7 @@ import UVICLogo from "./UVICLogo.jpg";
 import WTOLogo from "./WTOLogo.jpg";
 
 export {
+  AllianzLogo,
   BAIRLogo,
   COLPOLSOCLogo,
   COPLogo,

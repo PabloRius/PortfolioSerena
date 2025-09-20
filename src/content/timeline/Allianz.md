@@ -3,6 +3,7 @@ title: Allianz Global Investors (AGI)
 location: London, United Kingdom
 date: Jul 2025 - Present
 img: Allianz
+icon: AllianzLogo
 flag: GB
 index: 14
 ---
