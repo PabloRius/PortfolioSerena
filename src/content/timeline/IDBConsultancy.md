@@ -7,7 +7,7 @@ flag: GB
 index: 11
 ---
 
-<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Student Consultancy Project (part of LSE).</h4>
+<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Student Consultancy Project (part of LSE)</h4>
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">

@@ -8,7 +8,7 @@ flag: ES
 index: 7
 ---
 
-<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Dual Bachelor in International Studies and Political Sciences.</h4>
+<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Dual Bachelor in International Studies and Political Sciences</h4>
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">

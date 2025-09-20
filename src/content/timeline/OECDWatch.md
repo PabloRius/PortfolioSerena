@@ -8,7 +8,7 @@ flag: NL
 index: 9
 ---
 
-<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Responsible Business Conduct Intern.</h4>
+<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Responsible Business Conduct Intern</h4>
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">

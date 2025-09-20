@@ -7,7 +7,7 @@ flag: ES
 index: 3
 ---
 
-<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">International Cooperation Project Intern.</h4>
+<h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">International Cooperation Project Intern</h4>
 
 <ol class="list-[circle]">
     <li class="ml-5 prose">
