@@ -5,7 +5,7 @@ date: Jul 2025 - Present
 img: Allianz
 icon: AllianzLogo
 flag: GB
-index: 14
+index: 15
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">Growth Markets Intern</h4>

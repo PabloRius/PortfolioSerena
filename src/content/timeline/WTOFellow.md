@@ -5,7 +5,7 @@ date: Jul 2025 - Jul 2026
 img: WTOFellow
 icon: WTOLogo
 flag: CH
-index: 13
+index: 14
 ---
 
 <h4 class="text-left text-[clamp(1.3rem,3vw,1.45rem)] text-black">WTO Young Trade Leader</h4>

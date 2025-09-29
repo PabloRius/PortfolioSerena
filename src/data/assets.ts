@@ -13,6 +13,7 @@ export const icons_map: Record<string, ImageMetadata> = {
   UVICLogo: icons.UVICLogo,
   WTOLogo: icons.WTOLogo,
   AllianzLogo: icons.AllianzLogo,
+  OECDConsLogo: icons.OECDConsLogo,
 };
 
 export const images_map: Record<string, ImageMetadata> = {
@@ -31,4 +32,5 @@ export const images_map: Record<string, ImageMetadata> = {
   UVIC: images.UVIC,
   WTOFellow: images.WTOFellow,
   Allianz: images.Allianz,
+  OECDCons: images.OECDCons,
 };

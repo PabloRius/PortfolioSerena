@@ -3,6 +3,7 @@ import BAIRLogo from "./BAIRLogo.png";
 import COLPOLSOCLogo from "./COLPOLSOCLogo.png";
 import COPLogo from "./COPLogo.png";
 import LSELogo from "./LSELogo.png";
+import OECDConsLogo from "./OECDConsLogo.png";
 import OECDLogo from "./OECDLogo.png";
 import SCPOLogo from "./SCPOLogo.png";
 import UC3MLogo from "./UC3MLogo.png";
@@ -16,6 +17,7 @@ export {
   COLPOLSOCLogo,
   COPLogo,
   LSELogo,
+  OECDConsLogo,
   OECDLogo,
   SCPOLogo,
   UC3MLogo,
