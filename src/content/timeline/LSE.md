@@ -17,6 +17,9 @@ index: 10
     <li class="ml-5 prose">
         Part time job: LSE Student Content Creator.
     </li>
+    <li class="ml-5 prose">
+        Check out the Yearbook: <a href="https://drive.google.com/file/d/1e6gncln8BCKNhNRQggPq-a0H2GfSlX7j/view?usp=drivesdk" target="_blank">YearBook</a>.
+    </li>
 </ol>
 
 <a href="content_creator" class="inline-block text-center border-2 border-main-green-dark bg-main-green hover:bg-main-green-dark text-white font-medium px-6 py-3 rounded-lg mt-4 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg mx-auto max-w-[280px] w-full">
